@@ -1,0 +1,25 @@
+Introduction:
+HTTP(Hyper Text Transfer Protocol) is an application protocal that has been default standard for communication on the 
+World Wide Web.
+
+HTTP 1.1:
+1. It is developed by Timothy Berners-Lee in 1989 as a communication standard for the World Wide Web.
+2. HTTP is a top-level application protocol that exchanges information between a client computer and a local or remote web server.
+3. A client browser sends a text-based HTTP request to a server by calling a method like GET or POST. 
+    In response, the server sends a resource like an HTML page back to the client.
+4. HTTP/1.1 protocal which keeps all requests and responses in plain text format.
+5. HTTP/1.1 assumes that a TCP connection should be kept open unless directly told to close. This allows the client to send 
+   multiple requests along the same connection without waiting for a response to each, greatly improving the performance 
+   of HTTP/1.1 over HTTP/1.0.
+
+HTTP 2:
+1. It is developed by Google. Introduced in 2015 for intention of reducing web page load latency by using techniques 
+   such as compression, multiplexing, and prioritization.
+2. HTTP/2 protocol uses the binary framing layer to encapsulate all messages in binary format and it is 
+   maintaining HTTP semantics, such as verbs, methods, and headers.
+3. In HTTP/2, the binary framing layer encodes requests/responses and cuts them up into smaller packets of information, 
+   greatly increasing the flexibility of data transfer.
+4. Multiplexing resolves the head-of-line blocking issue in HTTP/1.1 by ensuring that no message has to wait for another to finish.
+5. servers and clients can send concurrent requests and responses, allowing for greater control and more efficient connection 
+   management.
+

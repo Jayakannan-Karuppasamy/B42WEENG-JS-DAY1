@@ -1,0 +1,84 @@
+Objects: 
+  In Javascript object is real time entity. An Object is a collection of properties which is in the form of Key & Pair value's. 
+ Syntax: 
+        {
+            property1: value1,
+            property2: value2,
+            ...............
+            ...............
+            property3: value3
+        }
+ 2. An Objects it contain's any combination of primitive data types(number,string,Boolean,null, undefined) as well 
+    as reference data types (Variables that are assigned a reference value are given a reference or a pointer to that value. 
+    The variables don't actually store the value).
+ 3. Property and value is separated by colon(:).
+ 4. The properties of an object define the characteristics of the object. You access the properties of an object with a 
+    simple dot-notation/array of key string.
+ 5. The object name (which could be a normal variable) and property name are case sensitive.
+     You can define a property by assigning it a value.
+ 6. Unassigned properties of an object are undefined (and not null).
+ 7. The way of Object form, 
+    1. simple object - properties and values (key & value) which is present inside curly braces '{}'.
+    2. list of object - properties and values (key & value) which is present inside square bracket [] with curly braces '{}'.
+
+
+ Example: 
+ let resume={
+    personalInfo:{
+        name: "Jayakannan.k",
+        email: "jkannan98471@gmail.com",
+        mobileno: 9842798471,
+        gender: "male",
+        Nationality: "Indian",
+        Religion: "Hindu"
+    },
+    Eductions: ["SSLC","HSC","Diploma", "Engineering"],
+    yearOfExperience: 11,
+    skills:{
+        techincal_stack:{
+            programming_language:["Java", "J2EE","JavaScript"],
+            frameworks:["SpringBoot","Apache Camel","Hibernate"],
+            servers:["JBOSSFUSE","TOMCAT"]
+        },
+        operating_system:["window","redhat-linux"],
+        database:["Oracle","MySQL","SQLServer"],
+        developer_tools:["Eclipse IDE","Intelij IDE","SQL Developer", "SOAPUI", "POSTMAN","Talend IDE"]
+    }
+ }
+
+ Creating Object in JavaScript:
+    1. By Object literal
+    2. By Creating instance of Object directly (using new keyword).
+
+1. Creating object By Object literal: 
+    Syntax:
+    variable_scope variable_name = { property1:value1, property2:value2, .... propertyN:valueN };
+
+    Example:
+        const employee={
+            emp_id:"1",
+            emp_name:"Jayakannan",
+            role:"Software Engineer"
+        };
+
+2. Creating object By creating instance of Object directly (using new keyword):
+    Syntax:
+    variable_scope variable_name = new Object();
+
+    Example:
+        const employee = new Object();
+        employee.emp_id = 1;
+        employee.emp_name ="Jayakannan";
+        employee.role="Software Engineer";
+
+Accessing JavaScript Object:
+    The syntax for accessing the property of an object is:
+    
+    objectName.property
+            or
+    objectName[“property”]
+
+    Example:
+        employee.emp_name 
+            or
+        employee[emp_name]
